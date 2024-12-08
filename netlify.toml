@@ -2,13 +2,33 @@
   for = "/*"
   [headers.values]
     Cache-Control = "max-age=31536000, immutable"
-    Content-Encoding = "gzip"
     Vary = "Accept-Encoding"
 
 [[headers]]
   for = "/api/*"
   [headers.values]
     Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*.html.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "text/html"
+    Vary = "Accept-Encoding"
+
+[[headers]]
+  for = "/*.css.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "text/css"
+    Vary = "Accept-Encoding"
+
+[[headers]]
+  for = "/*.js.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/javascript"
+    Vary = "Accept-Encoding"
 
 [[redirects]]
   from = "/*"
