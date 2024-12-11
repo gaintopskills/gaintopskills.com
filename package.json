@@ -14,7 +14,7 @@
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^1.0.0",
+    "@astrojs/markdown-remark": "^6.0.1",
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.4",
     "@astrojs/sitemap": "^3.0.5",
