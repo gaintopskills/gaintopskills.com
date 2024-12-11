@@ -14,7 +14,7 @@
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.2npm install",
+    "@astrojs/mdx": "^4.0.2",
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.4",
     "@astrojs/sitemap": "^3.0.5",
